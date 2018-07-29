@@ -115,7 +115,7 @@ class TodosController extends Controller
         // dd($id); 
         $todo = Todo::find($id);
         $todo->delete();
-        Session::flash('success','Your todo list is deleted!');
+        Session::flash('success','Your todo list iss deleted!');
         return redirect()->back();
     }
 
